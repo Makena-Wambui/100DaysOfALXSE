@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# demonstrate how to use trap for clean up
+
+function signal_interrupt()
+{
+	echo "Sleep interrupted by sig_int."
+}
+function signal_term()
+{
+	echo "Process terminated."
+}
+trap 'signal_interrupt; signal_term; exit' SIGINT SIGTERM
+
+while :
+do
+	echo "Trap listening for interruptions"
+	sleep 2
+done
