@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+# Better script that demonstrates how to count number of lines in a file by accepting arguments
+
+# No prompting the user for a filename
+# Pass the filename as CLI argument while running the script.
+
+# The first bash argument also called a positional parameter can be accessed within your script using
+#+ the $1 variable
+
+number_of_lines1=$(wc -l "$1")
+number_of_lines2=$(wc -l "$2")
+number_of_lines3=$(wc -l "$3")
+echo "$number_of_lines1", "$number_of_lines2", "$number_of_lines3"

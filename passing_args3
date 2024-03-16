@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+# You can use bash arguments to turn any hard command into an easy task
+
+# find command finds files in a directory hierarchy
+
+# With this script I can supply any filename as an argument and 
+#+ its location will be displayed.
+# any error message such as file can not be accessed is not displayed on the screen
+#+ as it is redirected to /dev/null; the blackhole of Linux
+
+trap 'echo "Search interrupted"' SIGINT
+
+find / -iname "$1" 2> /dev/null

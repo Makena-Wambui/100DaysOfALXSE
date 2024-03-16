@@ -1,0 +1,23 @@
+#!/usr/bin/bash
+# Various examples on how to use special bash variables
+
+# PID of the current shell
+echo "$$"
+
+# name of the bash script
+echo "$0"
+
+# arguments passed to the bash script
+echo "$1", "$2"
+
+# number of arguments passed to the script
+echo "$#"
+
+# value of all arguments passed to the script
+echo "$@"
+
+# exit status of the last executed command
+echo "$?"
+
+# pid of last background command
+echo "$!"

@@ -95,3 +95,17 @@ USAGE AND SYNTAX
 			
 		The script was successfully terminated on the other terminal.
 
+
+DAY TWO
+--------
+PASSING ARGUMENTS TO A BASH SHELL SCRIPT AND SPECIAL BASH SHELL VARIABLES
+How do you pass variables to shell scripts from the command line?
+$0 - name of your bash script
+$1 - first bash argument
+$2 - second bash argument
+$3 - third positional parameter
+
+You can pass multiple arguments to your bash script.
+
+Syntax: script.sh arg1 arg2 ... argn
+

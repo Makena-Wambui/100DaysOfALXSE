@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+# One way a script can output the total number of lines that exist in whatever file the user enters.
+
+# <option n>  to prevent newline
+echo -n "Please enter a filename: "
+
+# <option r> so backslashes dont escape characters
+read -r filename
+
+number_of_lines=$(wc -l < "$filename")
+
+echo "There are $number_of_lines lines in $filename."
