@@ -5,6 +5,7 @@ Demonstrate argument completion using the "complete_" methods.
 
 import cmd
 
+
 class Hello(cmd.Cmd):
     """
     Class: Hello.
@@ -14,7 +15,7 @@ class Hello(cmd.Cmd):
     prompt = "Makena$$  "
 
     FREINDS = ["Alice", "August", "Cindy", "David", "Gene", "Zeke", "Jake"]
-    # FRIENDS receive a less formal greeting compared to named or anynomous persons.
+    # FRIENDS receive a less formal greeting compared to other persons.
 
     def do_greet(self, person):
         """
@@ -33,24 +34,29 @@ class Hello(cmd.Cmd):
 
     def complete_greet(self, text, line, begidx, endix):
         """
-        When user provides input text, this method returns a list of 
+        When user provides input text, this method returns a list of
         friends that match.
         Otherwise, if no input text, the whole list of friends is returned.
         """
         if not text:
-            completions = self.FREINDS[:]
+            options = self.FREINDS[:]
 
         else:
-            completions = [name for name in self.FREINDS if name.startswith(text)]
+            options = [name for name in self.FREINDS if name.startswith(text)]
 
-        return completions
+        return options
+
+    def help_greet(self):
+        """
+        Produces well formatted help text for the command greet.
+        """
+        print("\n".join(["Greet named person."]))
 
     def do_EOF(self, line):
         """
         Cleanly exiting your interpreter
         """
         return True
-        
 
     def postloop(self):
         """
