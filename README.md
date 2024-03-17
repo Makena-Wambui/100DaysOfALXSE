@@ -109,3 +109,8 @@ You can pass multiple arguments to your bash script.
 
 Syntax: script.sh arg1 arg2 ... argn
 
+DAY THREE
+-----------
+in preparation for the AirBnB Clone, I familiarised myself with the cmd module.
+
+
