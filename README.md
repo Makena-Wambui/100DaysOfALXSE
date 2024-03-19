@@ -117,3 +117,8 @@ in preparation for the AirBnB Clone, I familiarised myself with the cmd module.
 DAY FOUR
 ---------
 Working on My Console
+
+DAY FIVE
+--------
+Work on AirBnb Clone: the console and models package.
+
