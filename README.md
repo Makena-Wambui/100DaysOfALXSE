@@ -122,3 +122,8 @@ DAY FIVE
 --------
 Work on AirBnb Clone: the console and models package.
 
+DAY SIX
+---------
+Spent day adding commands show, all, update, create, and destroy to my console. 
+Plus additional classes User, State, Place, City, Amenity and Review to my AirBnB  Clone.
+
