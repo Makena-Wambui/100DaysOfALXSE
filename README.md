@@ -127,3 +127,7 @@ DAY SIX
 Spent day adding commands show, all, update, create, and destroy to my console. 
 Plus additional classes User, State, Place, City, Amenity and Review to my AirBnB  Clone.
 
+DAY SEVEN
+------------
+More tweaks to the console.
+https://twitter.com/IammakenaAlicia/status/1770882888990368166
