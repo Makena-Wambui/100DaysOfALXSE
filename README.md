@@ -131,3 +131,9 @@ DAY SEVEN
 ------------
 More tweaks to the console.
 https://twitter.com/IammakenaAlicia/status/1770882888990368166
+
+DAY NINE
+------------
+Tokenizer Function for searcching for curly braces or square brackets in the input line
+
+
